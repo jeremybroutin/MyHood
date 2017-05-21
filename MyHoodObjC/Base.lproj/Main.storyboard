@@ -34,11 +34,11 @@
                                 <rect key="frame" x="16" y="84" width="343" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="dSm-8A-vOF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="87" id="dSm-8A-vOF" customClass="PostCell">
                                         <rect key="frame" x="0.0" y="28" width="343" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dSm-8A-vOF" id="boK-85-UaY">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="86.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="Qw1-22-v0c">
@@ -76,6 +76,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="hyx-yM-abI" secondAttribute="trailing" id="saF-sT-hE4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descLabel" destination="jjn-ps-jcp" id="JWw-um-MMY"/>
+                                            <outlet property="postImg" destination="Qw1-22-v0c" id="oDw-pi-rqZ"/>
+                                            <outlet property="titleLabel" destination="hyx-yM-abI" id="Q6c-S9-or5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
