@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DataService.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -19,11 +22,12 @@
   // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return DataService.sharedManager.loadedPosts.count;
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  return [[UITableViewCell alloc] init];
+}
 
 @end

@@ -16,12 +16,12 @@ static NSString *const KEY_POSTS = @"posts";
 #pragma mark Singleton methods
 
 + (id)sharedManager {
-  static DataService *sharedDataService = nil;
+  static DataService *_sharedDataService = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    sharedDataService = [[self alloc] init];
+    _sharedDataService = [[DataService alloc] init];
   });
-  return sharedDataService;
+  return _sharedDataService;
 }
 
 - (id)init {

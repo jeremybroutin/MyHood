@@ -13,9 +13,6 @@
 
 @property (nonatomic, strong) NSMutableArray<Post *> *loadedPosts;
 
-+ (id)sharedManager;
-
-- (void)savePosts;
-- (void)addPost:(Post*)post;
++ (DataService*)sharedManager;
 
 @end
