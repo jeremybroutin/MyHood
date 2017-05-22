@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 @class Post;
 
 @interface DataService : NSObject
 
 @property (nonatomic, strong) NSMutableArray<Post *> *loadedPosts;
+
+- (UIImage*)imageForPath:(NSString*)path;
+- (void)loadPosts;
 
 + (DataService*)sharedManager;
 

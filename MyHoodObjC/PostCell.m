@@ -8,6 +8,7 @@
 
 #import "PostCell.h"
 #import "Post.h"
+#import "DataService.h"
 
 @interface PostCell ()
 
@@ -32,6 +33,7 @@
   self.titleLabel.text = post.title;
   self.descLabel.text = post.postDesc;
   // Get image from path via DataService
+  self.postImg.image = [DataService.sharedManager imageForPath:post.imagePath];
 }
 
 @end

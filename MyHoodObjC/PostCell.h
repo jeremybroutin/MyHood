@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Post.h"
 
 @interface PostCell : UITableViewCell
+
+- (void)configureCellWithPost:(Post *)post;
 
 @end
