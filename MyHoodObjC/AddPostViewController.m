@@ -49,6 +49,9 @@
   }
 }
 
+- (IBAction)cancelBtnPressed:(UIButton *)sender {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark - Delegate methods
 

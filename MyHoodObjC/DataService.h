@@ -16,6 +16,8 @@
 
 - (UIImage*)imageForPath:(NSString*)path;
 - (void)loadPosts;
+- (NSString*)saveImageandCreatePath:(UIImage*)image;
+- (void)addPost:(Post*)post;
 
 + (DataService*)sharedManager;
 

@@ -26,7 +26,7 @@ static NSString *const KEY_POSTS = @"posts";
 
 - (id)init {
   if (self = [super init]) {
-    // Initiliaze any property
+    self.loadedPosts = [[NSMutableArray<Post *> alloc]init];
   }
   return self;
 }
@@ -40,7 +40,7 @@ static NSString *const KEY_POSTS = @"posts";
 }
 
 - (void)loadPosts {
-  NSData *postsData = [NSKeyedArchiver archivedDataWithRootObject:self.loadedPosts];
+  NSData *postsData = [NSUserDefaults.standardUserDefaults objectForKey:KEY_POSTS];
   if (postsData) {
     NSMutableArray<Post*> *postsArray = [NSKeyedUnarchiver unarchiveObjectWithData:postsData];
     if (postsArray) {
