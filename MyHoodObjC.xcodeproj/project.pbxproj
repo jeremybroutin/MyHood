@@ -16,6 +16,7 @@
 		E3FF2AE61ED2136200000DC1 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF2AE51ED2136200000DC1 /* PostCell.m */; };
 		E3FF2AE91ED213F200000DC1 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF2AE81ED213F200000DC1 /* Post.m */; };
 		E3FF2AEC1ED21DF500000DC1 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF2AEB1ED21DF500000DC1 /* DataService.m */; };
+		E3FF2AEF1ED39DCB00000DC1 /* AddPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3FF2AEE1ED39DCB00000DC1 /* AddPostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		E3FF2AE81ED213F200000DC1 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		E3FF2AEA1ED21DF500000DC1 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
 		E3FF2AEB1ED21DF500000DC1 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		E3FF2AED1ED39DCB00000DC1 /* AddPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPostViewController.h; sourceTree = "<group>"; };
+		E3FF2AEE1ED39DCB00000DC1 /* AddPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				E3FF2AE81ED213F200000DC1 /* Post.m */,
 				E3FF2AD31ED208B000000DC1 /* ViewController.h */,
 				E3FF2AD41ED208B000000DC1 /* ViewController.m */,
+				E3FF2AED1ED39DCB00000DC1 /* AddPostViewController.h */,
+				E3FF2AEE1ED39DCB00000DC1 /* AddPostViewController.m */,
 				E3FF2AE41ED2136200000DC1 /* PostCell.h */,
 				E3FF2AE51ED2136200000DC1 /* PostCell.m */,
 				E3FF2AD91ED208B100000DC1 /* Assets.xcassets */,
@@ -166,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3FF2AEF1ED39DCB00000DC1 /* AddPostViewController.m in Sources */,
 				E3FF2AE91ED213F200000DC1 /* Post.m in Sources */,
 				E3FF2AD51ED208B000000DC1 /* ViewController.m in Sources */,
 				E3FF2AD21ED208B000000DC1 /* AppDelegate.m in Sources */,
@@ -332,6 +338,7 @@
 				E3FF2AE31ED208B100000DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
